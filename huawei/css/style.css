@@ -1,0 +1,292 @@
+html,body,div,span,img,p,ul,li,dl,dt,dd,input,a,h1,h2,h3,h4{margin: 0;padding: 0;list-style: none;border: 0;}
+/*公共样式*/
+/*字体图标声明*/
+@font-face{
+	
+	font-family: 'xiao';
+	
+	src:	url('../fonts/icomoon.eot?fgueyp');
+	src:	url('../fonts/icomoon.eot?fgueyp#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?fgueyp') format('truetype'),
+		url('../fonts/icomoon.woff?fgueyp') format('woff'),
+		url('../fonts/icomoon.svg?fgueyp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*字体图标声明结束*/
+body{background: #E6E6FA;
+}
+.contenr{
+	margin: auto 20%;
+	background: #fff;
+}
+.clearfix:after .cl{
+	content: "";
+	visibility: hidden;
+	height: 0;
+	display: block;
+	clear: both;
+}
+.clear{clear: both;}
+/*公共样式结束*/
+/*logo样式*/
+
+
+.head{
+	position: relative;
+	height: 10%;
+	width:80%;
+		
+	
+}
+.logo{	
+	margin: 1%;
+	float: left;
+	height: 80%;
+}
+.logo img{
+	width: 200px;
+	height: 100%;
+}
+.box{
+	width:40%;
+	height: 80%;
+	border-radius:18px;
+	border: 1px solid;		
+	color: #B0C4DE;		
+	margin: 10px;
+	float: left;
+	margin-left: 30px;
+
+}
+.box i{
+	font-family: 'xiao';
+	font-size:32px;
+	margin-left:60%;
+	
+}
+.fonts{
+	font-family: 'xiao';
+	font-size:32px;
+	float:left;
+	height: 80%;
+
+	
+	margin: 10px;
+	float: left;
+	margin-left: 50px;
+}
+
+
+.slider ul{
+	width: 640px;
+	list-style:none;
+	margin: 0px;
+	
+}
+.slider ul li{
+	position: relative;
+	z-index: 1;
+}
+.slider ol{
+	position: absolute;
+	z-index: 2;
+}
+.slider ol li em{
+	width: 1%;
+	height: 1%;
+	border-radius:60%;
+	border: 1px solid red;		
+	color: #B0C4DE;		
+	margin: 10px;
+	float: left;
+	margin-left: 30px;
+	
+
+}
+#slider{
+/*	overflow:hidden;*/
+	/*display: block;*/
+}
+.slides{
+	position: relative;
+	overflow: hidden;
+	width:640px;
+	height:270px;
+
+}
+.table{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+.list td{
+	font-family: 'xiao';
+	font-size: 48px;
+	color: red;
+	height: 50px;
+}
+.list{
+	width: 100%;
+	height: 30%;
+	line-height: 30%;
+}
+.listfonts td{
+	font-size: 24px;
+	color: #3c3c3c;
+}
+.span1 img{
+	width: 40%;
+	height: 160px;
+	float: left;
+}
+.span2 img{
+	width: 60%;
+	float: left;
+}
+.content_list{
+	width: 100%;
+	height: 80%;
+	border: 1px solid #ccc;
+	list-style: none;
+	position: relative;
+}
+
+.left1{
+	width: 50%;
+	height:70%;
+	
+	float: left;
+	border: 1px solid #ccc;
+	float: left;
+	box-sizing:border-box;
+	
+	padding: 10px;
+}
+.left1 .hot{
+	background: red;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid;
+	border-radius:15px;
+	 
+	margin-left:87%;
+	transform:rotate(35deg)
+}
+.left1 p{
+	font-size: 26px;
+	color:#3c3c3e;
+}
+.left1 img{
+	width: 200px;
+	height: 200px;
+	margin: 50px 10px 10px 100px;
+}
+.right1{
+	width: 50%;
+	height:35%;
+	float: left;
+	border: 1px solid #ccc;
+	box-sizing:border-box;
+}
+.right1 .hot{
+	background: green;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid;
+	border-radius:15px;
+	 margin-top: 10px;
+	margin-left: 340px;
+	transform:rotate(35deg)
+}
+.right2{
+	width: 50%;
+	height:35%;
+
+	float: left;
+	border: 1px solid #ccc;
+	box-sizing:border-box;
+}
+
+.right1 p{
+	font-size: 26px;
+	color: #3c3c3e;
+}
+.right1 ul li{
+	float: left;
+	margin-left:10px;
+}
+.right1 ul li img{
+	width: 142px;
+	height: 142px
+}
+.right2 .hot{
+	background: red;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid;
+	border-radius:15px;
+	 margin-top: 10px;
+	margin-left: 330px;
+	transform:rotate(35deg)
+}
+.right2 p{
+	font-size: 26px;
+	color: #3c3c3e;
+}
+.right2 ul li{
+	float: left;
+	margin-left:10px;
+}
+.right2 ul li img{
+	width: 142px;
+	height: 142px;
+}
+..listtwo {
+	width: 100%;
+	height: 100%;
+	
+}
+.listtwo ul li{
+	width: 50%;
+	float: left;
+}
+.left2{
+	width: 100%;
+	height:35%;
+	background: #fff;
+	float: left;
+	border: 1px solid #ccc;
+	float: left;
+	box-sizing:border-box;
+	list-style: none;
+	
+	padding: 10px;
+}
+.left2 .hot{
+	background: red;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid;
+	border-radius:15px;
+	 margin-top: 10px;
+	margin-left: 330px;
+	transform:rotate(35deg)
+}
+.left2 p{
+	font-size: 26px;
+	color: #3c3c3e;
+}
