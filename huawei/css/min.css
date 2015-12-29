@@ -37,7 +37,10 @@ body{background: #E6E6FA;
 	position: relative;
 	height: 10%;
 	width:100%;
-		
+	position:fixed;
+	top:0px;
+	z-index:1000;
+	background: #fff;	
 	
 }
 .logo{	
@@ -72,51 +75,74 @@ body{background: #E6E6FA;
 	font-family: 'xiao';
 	font-size:24px;
 	float:left;
-	height: 80%;
-
-	
+	height: 80%;	
 	margin: 10px;
 	float: left;
 	margin-left: 30px;
 }
 
 
-.slider ul{
+.slides ul{
 	width: 320px;
 	list-style:none;
 	margin: 0px;
 	
 }
-.slider ul li{
+.slides ul{
 	position: relative;
 	z-index: 1;
 }
-.slider ol{
+.slides ul li{
+	position: absolute;
+	 left: 0;
+	 top: 0;
+}
+.slides ol{
 	position: absolute;
 	z-index: 2;
+	right: 10px;
+	bottom: 1px;
 }
-.slider ol li em{
-	width: 1%;
-	height: 1%;
-	border-radius:60%;
-	border: 1px solid red;		
-	color: #B0C4DE;		
-	margin: 10px;
+/*.slides ol li{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	color: #ccc;
+	border: 1px solid #f60;
+	background: #333;
 	float: left;
-	margin-left: 30px;
+	margin-right: 10px;
+	margin-top: 10px;
 	
 
+}*/
+.slides ol li{
+	width: 10px;
+	height: 10px;
+	border: 1px solid;
+	border-radius: 50%;
+	float: left;
+	color: black;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
 }
-#slider{
-/*	overflow:hidden;*/
-	/*display: block;*/
+.slidesli{
+	background: #fff;
+
 }
 .slides{
-	position: relative;
 	overflow: hidden;
-	width:640px;
-	height:270px;
+	position: relative;
+	width: 300px;
+	height: 270px;
 
+}
+.slides img{
+	width: 300px;
+	height: 270px;
 }
 .table{
 	width: 100%;
@@ -135,7 +161,7 @@ body{background: #E6E6FA;
 	line-height: 30%;
 }
 .listfonts td{
-	font-size: 24px;
+	font-size: 16px;
 	color: #3c3c3c;
 }
 .span1 img{
@@ -160,13 +186,9 @@ body{background: #E6E6FA;
 .left1{
 	width: 50%;
 	height:70%;
-	
 	float: left;
-	border: 1px solid #ccc;
-	
-	box-sizing:border-box;
-	
-	
+	border: 1px solid #ccc;	
+	box-sizing:border-box;		
 }
 .left1 .hot{
 	background: red;
@@ -176,8 +198,7 @@ body{background: #E6E6FA;
 	line-height: 30px;
 	text-align: center;
 	border: 1px solid;
-	border-radius:15px;
-	 
+	border-radius:15px;	 
 	margin-left:80%;
 	transform:rotate(35deg)
 }
@@ -203,18 +224,14 @@ body{background: #E6E6FA;
 	color: #fff;
 	width: 30px;
 	height: 30px;
-	line-height: 30px;
-	
+	line-height: 30px;	
 	border: 1px solid;
-	border-radius:15px;
-	
-	
+	border-radius:15px;		
 	transform:rotate(35deg)
 }
 .right2{
 	width: 50%;
 	height:35%;
-
 	float: left;
 	border: 1px solid #ccc;
 	box-sizing:border-box;
@@ -299,4 +316,12 @@ body{background: #E6E6FA;
 .left2 img{
 	width: 90px;
 	height: 90px;
+}
+.top{
+	font-family: 'xiao';
+	font-size:32px;
+	right: 0;
+	float: right;
+	margin-top:25%;
+	cursor: pointer;
 }

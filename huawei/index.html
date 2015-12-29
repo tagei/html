@@ -21,6 +21,7 @@
 </div>
 <div id="slids">
 		<div class="slides">
+			<!-- 图片轮播列表 -->
 			<ul>
 				<li>
 					<a href="#">
@@ -64,23 +65,25 @@
 				</li>
 			</ul>	
 			<ol>
-				<li><em></em>11</li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
-				<li><em>&nbsp;</em></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="slidesli"></li>
 
 
 			</ol>				
 	</div>
 
 </div>
+<!-- 图片轮播列表结束 --> 
 <div class="list">
 	<table class="table">
 		<tr>
+			<!-- 字体图标 -->
 			<td></td>
 			<td></td>
 			<td></td>
@@ -93,6 +96,7 @@
 			<td>彩票</td>
 		</tr>
 			<tr>
+			<!-- 字体图标 -->
 			<td></td>
 			<td></td>
 			<td></td>
@@ -115,6 +119,7 @@
 		<a href="#"><img src="mq_files/44.jpg"></a>
 	</span>	
 <div class="content_list">	
+	<!-- 商品列表 -->
 	<ul>
 		<li>
 			
@@ -353,5 +358,25 @@
 </div>	
 </div>
 </div>
+<!-- 回到顶部 -->
+<div class="top" onclick="window.scrollTo('0','0')"></div>
+<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var num2=8;
+		$(' ol li').mouseover(function(e){
+			//alert('bb');
+			$(this).attr('class','slidesli');
+			$(this).siblings().attr('class','');
+
+			var num = $(this).index();
+			$('ul li').eq(num).css('left','640px');
+			num2++;
+			$('ul li').eq(num).css('z-index',num2);
+			$('ul li').eq(num).animate({left:'0'},500);
+			//$('ul li').eq(num).css('left','0');
+		})
+	})
+	</script>
 </body>
 </html>
